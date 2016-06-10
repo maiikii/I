@@ -1,0 +1,74 @@
+mpa3-1.c
+
+Display:
+
+x is 5
+x is -3
+x is 0
+
+
+Putting only one equal sign in a if-statement assigns a value to the variable
+If I remember correctly, putting only a number inside the if-else statement means that any number not equal to zero is True while zero means False. That explains why all the statements were displayed except for the last one.
+
+
+
+
+mpa3-2.c
+
+Display:
+
+Ang isa ay higit sa dalawa...
+'Di nga?
+
+(infinite iteration display of this)
+
+
+The first while loop terminated because the zero means False. The following while statements resulted to an infinite display because there's no statement that makes the loop terminates.
+
+
+
+mpa3-3.c
+
+Display:
+
+ch1 is: ?
+ch2 is: ?
+ch3 is: ?
+ch4 is: ?
+ch5 is: ?
+
+
+-
+
+ch1 is: 0
+ch1 is: 1
+ch1 is: 2
+ch1 is: 3
+ch1 is: 4
+ch1 is: 5
+ch1 is: 6
+ch1 is: 7
+ch1 is: 8
+ch1 is: 9
+
+-
+
+A.......Z
+
+-
+
+a.......z
+
+-
+
+ch1 is: •
+
+-
+
+/all characters/
+
+
+When an integer is displayed as a character, it follows the ASCII code that's why in the first display those are symbols.
+The second output displays the digits from 0 to 9 and the two output that follows are uppercase and lowercase letters respectively. In accordance to ASCII code as well.
+I thought I was right in the 5th output but it turns out it was a beep when I ran it.
+The characters is under the range of 0 to 255 so it displayed all the characters in the last output.

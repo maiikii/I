@@ -1,0 +1,7 @@
+Create flowcharts that will solve the following problems. Note that the first problem asks for 2 solutions.
+
+Observe the following series: 1 4 9 16 25 36 49 64 81 100 ... Ask the user to enter a number n and display the first n elements of the series above. Provide two solutions two this problem since you can observe at least two patterns in the series.
+
+Observe the following series: 4 9 8 18 12 27 16 36 20 45 24 54 ... Ask the user to enter a number n and display the nth element of the series above.
+
+Ask the user to enter a number in decimal and display its equivalent in octal.

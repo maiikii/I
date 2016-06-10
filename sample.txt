@@ -1,0 +1,70 @@
+// Player 1 will attack Player 2
+
+	while (ply1Life > 0 || ply2Life > 0)
+	{
+		printf("\n\n\nPlayer 1 attacking Player 2.\n\n");
+
+		// casting a spell
+		printf("Want to cast a spell? If yes, press 1.");
+		scanf("%c", &ch);
+		if (ch == '1')
+		{
+			if (ply1Manna >= 6)
+			{
+				printf("\n\n\nKiss of the Jade smoke activated. . .");
+				printf("\n\nPlayer 2 countering the spell. . .");
+				rg = rand() % 20 + 1;
+				if (rg > 10)
+				{
+					printf("\n\nPlayer 2 Successfully counter the spell!.");
+					ply1Manna -= 6;
+				}
+				else if (rg < 10)
+				{
+					printf("\n\nFailed to counter the spell.");
+					ply2Life -= 2;
+					ply1Manna -= 6;
+				}
+			}
+			else
+				printf
+					("\n\nUnable to cast a spell. Required of 6 manna points.");
+		}
+		else
+		{
+			rr = rand() % 3 + 1;
+			printf("\n\n\nFrom 1-3, enter a number: ");
+			scanf("%i", &input);
+			if (input == rr){
+				printf("Player 2 uses the shield!\n\n");
+				if((ply1weapon==1 && ply1shield==1) || (ply1weapon==2 && ply1shield==2) || (ply1weapon==3 && ply1shield==3) )
+					printf("The attack is neutralized.");
+				else if((ply1weapon==1 && ply1shield==2) || (ply1weapon==1 && ply1shield==3)){
+					printf("Attack repelled!");
+					ply2Life=-1;
+				}
+				else if(/*what condition here?*/){
+					printf("Attack repelled!");
+					ply2Life=-2;
+				}
+				else if(/*what condition here?*/){
+					printf("Attack blocked.");
+					ply2Life=-3;
+				}
+			}
+			else
+			{
+				if((ply1weapon==1 && ply2weapon==1) || (ply1weapon==2 && ply2weapon==2) || (ply1weapon==3 && ply2weapon==3) )
+					printf("The attack is neutralized.");
+				else if(ply1weapon==1){
+					ply2Life=-1;
+				}
+				else if(ply1weapon==2){
+					ply2Life=-2;
+				}
+				else if(ply1weapon==3)
+					ply2Life=-3;
+			
+				printf("You were hit!.\n\n");
+			}
+		}
